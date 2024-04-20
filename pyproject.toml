@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "isbjorn"
+version = "0.1.0"
+description = ""
+authors = ["Paul Burt <paul.burt@bbc.co.uk>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.12,<3.13"
+loguru = "^0.7.2"
+polars = "^0.20.20"
+prefect = "^2.18.0"
+
+[tool.black]
+line-length = 80
+
+[tool.pyright]
+venv = ".venv"
+venvPath = "."
+
+[tool.pyright.analysis]
+typeCheckingMode = "strict"
+
+[tool.ruff]
+line-length = 80
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
